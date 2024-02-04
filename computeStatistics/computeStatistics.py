@@ -92,7 +92,7 @@ def f_print_results(results, columns, stats):
         print(f"Error: {type_error}")
 
 
-def f_save_file(all_results, columns, stats, path):
+def f_save_file(all_results, columns, stats, path, end):
     """
     Function to save file
     """
@@ -107,6 +107,7 @@ def f_save_file(all_results, columns, stats, path):
                     except KeyError as key_error:
                         print(f"Error: Missing key '{stat}' in result dictionary - {key_error}")
                 file.write("\n")
+            file.write("\nElapsed Time:\t" + str(end))
     except FileNotFoundError as file_not_found_error:
         print(f"Error: File not found - {file_not_found_error}")
     except PermissionError as permission_error:
@@ -114,6 +115,7 @@ def f_save_file(all_results, columns, stats, path):
 
 
 def main():
+    """Main principal"""
     try:
         if len(sys.argv) < 2:
             print("Error: faltan parametros")
@@ -132,12 +134,13 @@ def main():
         print_stats = ["COUNT", "MEAN", "MEDIAN", "MODE", "SD", "VARIANCE"]
         NAME_FILE = "StatisticsResults.txt"
         f_print_results(final_data, print_columns, print_stats)
-        f_save_file(final_data, print_columns, print_stats, NAME_FILE)
         end = time.time() - start
+        f_save_file(final_data, print_columns, print_stats, NAME_FILE, end)
         print("Elapsed Time: ", end)
     except (FileNotFoundError, IOError, ValueError, TypeError) as error:
         print(f"Error: {error}")
         sys.exit(1)
+
 
 if __name__ == "__main__":
     main()

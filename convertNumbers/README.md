@@ -9,4 +9,3 @@
   *   Ejercicio 2 - convertNumbers
 
 
-## Resultados de ejecución

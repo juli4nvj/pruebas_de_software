@@ -7,7 +7,5 @@
 * 4.2 Ejercicio de programación 1
   
   *   Ejercicio 1 - computeStatistics
-  
-  
-## Resultados de ejecución
+
 

@@ -49,8 +49,9 @@ def main():
                     binary, hexa = convert_number(number)
                     result_file.write(f"{i}\t{number}\t{binary}\t{hexa}\n")
                     print(f"{i}\t{number}\t{binary}\t{hexa}")
-
     elapsed_time = time.time() - start_time
+    with open(result_path, 'a', encoding='utf-8') as result_file:
+        result_file.write(f"\nElapsed Time\t{elapsed_time} seconds\n")
     print(f"\nElapsed Time: {elapsed_time} seconds")
 
 

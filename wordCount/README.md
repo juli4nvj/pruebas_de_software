@@ -5,8 +5,6 @@
 ## 📙 Actividades de código
  
 * 4.2 Ejercicio de programación 1
-  
+
   *   Ejercicio 3 - wordCount
 
-
-## Resultados de ejecución
