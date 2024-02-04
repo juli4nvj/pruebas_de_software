@@ -2,8 +2,6 @@
  
 ## 📘 Dr. Gerardo Padilla Zárate
  
-* Repositorio que cuenta con los procesos de arquetipo
- 
 ## 📙 Actividades de código
  
 * 4.2 Ejercicio de programación 1
