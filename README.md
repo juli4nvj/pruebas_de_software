@@ -1,4 +1,4 @@
-# 📚 Pruebas de software y aseguramiento de la calidad 📚 
+# 📚 Pruebas de software y aseguramiento de la calidad
 
 ## 📘 Dr. Gerardo Padilla Zárate
  
