@@ -1,11 +1,17 @@
+# pylint: disable=invalid-name
+"""Pruebas de software y aseguramiento de la calidad
+   5.2 Ejercicio de programación 2 y análisis estático
+"""
+
 import json
 import sys
 import time
 
 
 def read_file(filename):
+    """Función para leer archivos"""
     try:
-        with open(filename, 'r') as file:
+        with open(filename, 'r', encoding='utf-8') as file:
             return json.load(file)
     except FileNotFoundError:
         print(f"Error: File '{filename}' not found.")
@@ -15,23 +21,26 @@ def read_file(filename):
         return None
 
 
-def f_calculate_cost(catalogue, sales):
+def f_calculate_cost(catalog, sales):
+    """Función para realizar los calculos de los productos"""
     total = 0
     for sale in sales:
         product = sale.get("Product")
         quantity = sale.get("Quantity")
-        for sales in catalogue:
-            title = sales.get("title")
+        product_found = False
+        for catal in catalog:
+            title = catal.get("title")
             if product == title:
-                price = sales.get("price")
+                price = catal.get("price")
                 total += price * quantity
-        else:
-            print(f"The product {product} not found.")
-
+                product_found = True
+        if not product_found:
+            print(f"The product {product} not found")
     return total
 
 
 def main():
+    """Función principal main"""
     if len(sys.argv) < 2:
         print("Parameters missing")
         sys.exit(1)
@@ -59,11 +68,11 @@ def main():
 
     end_time = time.time()
     elapsed_time = end_time - start_time
-    result = "    TOTAL\n" + "\n".join(total_list) + "\n"
+    result = "\n    TOTAL\n" + "\n".join(total_list) + "\n"
     print(result)
     print(f"Elapsed time: {elapsed_time:.2f} seconds")
 
-    with open("SalesResults.txt", 'w') as results_file:
+    with open("SalesResults.txt", 'w', encoding='utf-8') as results_file:
         results_file.write(result)
 
 
