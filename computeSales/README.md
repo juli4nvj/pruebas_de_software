@@ -50,10 +50,10 @@ A01793875
 	Use files included in the assignment.
 
 ## Execute computeSales.py
- ![image](https://github.com/juli4nvj/pruebas_de_software/assets/104632603/61567c24-68a7-4105-99df-ae386d9a44ef)
- ![image](https://github.com/juli4nvj/pruebas_de_software/assets/104632603/b770fb00-ce8d-43d3-93d6-e612b8830134)
+![image](https://github.com/juli4nvj/pruebas_de_software/assets/104632603/d58e61b9-724e-497e-aeaa-52266475a2ff)
 
-
+## Result file:
+![image](https://github.com/juli4nvj/pruebas_de_software/assets/104632603/34f46eb7-98a9-4610-a197-b5c2a93760d8)
 
 
 ## Install flake8
@@ -63,6 +63,10 @@ A01793875
 ## Execute flake8
 
 ![image](https://github.com/juli4nvj/pruebas_de_software/assets/104632603/9e876337-9395-4ade-b9b6-34d5bae75426)
+
+## Execute pylint
+![image](https://github.com/juli4nvj/pruebas_de_software/assets/104632603/48fdac4c-d867-4ee3-8fb3-069c020b2a12)
+
 
 
 
