@@ -3,8 +3,12 @@
 ## 📘 Dr. Gerardo Padilla Zárate
  
 ## 📙 Actividades de código
+
+Julián Valera Juárez
+A01793875
+
  
-* 5.2 Ejercicio de programación 2 y análisis estático
+## 5.2 Ejercicio de programación 2 y análisis estático
   
   *   Ejercicio - computeSales
 
@@ -44,9 +48,25 @@
 ## Test Cases and Evidence
 	Record the execution.
 	Use files included in the assignment.
-	
 
-## Julián Valera Juárez
+## Execute computeSales.py
+ ![image](https://github.com/juli4nvj/pruebas_de_software/assets/104632603/61567c24-68a7-4105-99df-ae386d9a44ef)
+ ![image](https://github.com/juli4nvj/pruebas_de_software/assets/104632603/b770fb00-ce8d-43d3-93d6-e612b8830134)
 
-## A01793875
+
+
+
+## Install flake8
+
+![image](https://github.com/juli4nvj/pruebas_de_software/assets/104632603/93e384dd-8256-4559-aad4-5d5f3aaf5437)
+
+## Execute flake8
+
+![image](https://github.com/juli4nvj/pruebas_de_software/assets/104632603/9e876337-9395-4ade-b9b6-34d5bae75426)
+
+
+
+
+
+
 		
