@@ -1,0 +1,14 @@
+[
+    {
+        "name": "Hotel A",
+        "location": "Location A",
+        "capacity": 10,
+        "rooms_available": 9
+    },
+    {
+        "name": "Hotel B",
+        "location": "Location B",
+        "capacity": 20,
+        "rooms_available": 20
+    }
+]
